@@ -1,0 +1,23 @@
+{
+    "name": "My_first_extension",
+    "version": "1.0",
+    "description": "Let's check the playing time!",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "<all_urls>",
+        "tabs"
+    ],
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*", "https://www.netflix.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "Check time"
+    }
+}
