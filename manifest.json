@@ -11,7 +11,7 @@
     "manifest_version": 2,
     "content_scripts": [
         {
-            "matches": ["https://www.youtube.com/*", "https://www.netflix.com/*"],
+            "matches": ["https://www.youtube.com/watch?*", "https://www.netflix.com/watch/*"],
             "js": ["content.js"]
         }
     ],
